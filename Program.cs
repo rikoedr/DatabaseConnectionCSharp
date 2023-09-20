@@ -7,15 +7,12 @@ namespace DatabaseConnection;
 public class Program
 {
     private static void Main(string[] args) {
-        RegionTest(true);
+        Employee employee = new Employee();
+
+        Console.WriteLine(employee.GetById(1).FirstName);
     }
 
-    public static bool RegionTest(bool status) {
-        if (!status) return false;
-        
-
-        return true;
-    }
+    
 
     
 }
